@@ -9,17 +9,18 @@ local spellTable = {
 	[47610] = true,-- frostfire bolt
 	[42833] = true,-- fireball
 	[42859] = true,--scorch
+	[133] = true,
 };
 
 
 local function setFrameIcon()
-	frameIcon = CreateFrame("FRAME", "FrameIcon", UIParent);
+	frameIcon = CreateFrame("FRAME", "FrameIcon", UIParent );
 	frameIcon:SetSize(32, 32);
 	frameIcon:SetPoint("TOPLEFT", frameAnchor, 0, 0);
 
 	frameIcon.icon = frameIcon:CreateTexture("IconTexture", "BACKGROUND");
 	frameIcon.icon:SetPoint("CENTER", 0, 0);
-	frameIcon.icon:SetTexture("\\Interface\\AddOns\\heatingup\\media");
+	frameIcon.icon:SetTexture("\\Interface\\AddOns\\heatingup\\media\\Hot_Streak.blp");
 
 	frameIcon:Hide();
 	
